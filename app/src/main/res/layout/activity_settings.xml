@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/titleSettings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_settings"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupOptions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/titleSettings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonSuperAhorrro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activar modo súper Ahorrro" />
+        <RadioButton
+            android:id="@+id/radioButtonAhorroModerado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activar modo ahorro moderado" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNoAhorro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modo no ahorrador" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Guardar cambios"
+        app:layout_constraintEnd_toStartOf="@+id/btnBackSettings"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupOptions" />
+
+    <Button
+        android:id="@+id/btnBackSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupOptions"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

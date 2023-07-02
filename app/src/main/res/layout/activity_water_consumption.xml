@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaterConsumptionActivity">
+
+    <TextView
+        android:id="@+id/info_message"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_water_consumption"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+
+    <EditText
+        android:id="@+id/editTextCantidadAguaConsumida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad de agua consumida"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/btnSaveWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        app:layout_constraintTop_toBottomOf="@id/editTextCantidadAguaConsumida"
+        app:layout_constraintEnd_toStartOf="@id/btnBackWaterRegister"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnBackWaterRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        app:layout_constraintTop_toBottomOf="@id/editTextCantidadAguaConsumida"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

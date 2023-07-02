@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HidroTrack</string>
+    <!-- activity_main.xml -->
+    <string name="title_main">Pantalla de inicio</string>
+
+    <!-- activity_water_consumption.xml -->
+    <string name="title_water_consumption">Registro de consumo de agua</string>
+
+    <!-- activity_tips.xml -->
+    <string name="title_tips">Consejos para reducir el consumo de agua</string>
+
+    <!-- activity_progress.xml -->
+    <string name="title_progress">Seguimiento y progreso del consumo de agua</string>
+
+    <!-- activity_info.xml -->
+    <string name="title_info">Información sobre la conservación del agua</string>
+
+    <!-- activity_settings.xml -->
+    <string name="title_settings">Configuración</string>
+
+</resources>
